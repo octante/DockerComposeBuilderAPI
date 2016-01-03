@@ -1,4 +1,4 @@
-docker-compose-builder
+DockerComposeBuilder
 ======================
 
 A Symfony project created on January 2, 2016, 5:38 pm.

@@ -13,9 +13,8 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
-        ]);
+        $dockerComposeYml = $this->get('octante.docker_compose_yml_builder')->build();
+
+        return $this->render('AppBundle:default:index.html.twig');
     }
 }
